@@ -1,4 +1,4 @@
-FROM python:3.10-bullseye
+FROM python:3.11-bullseye
 
 WORKDIR /app
 
@@ -27,4 +27,4 @@ COPY project/ .
 ENV PORT 10000
 EXPOSE $PORT
 
-CMD ["gunicorn", "--bind", "0.0.0.0:10000", "app:app"]
+CMD ["gunicorn" , "app:app", "--bind", "0.0.0.0:10000"]
