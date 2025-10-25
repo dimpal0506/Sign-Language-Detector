@@ -32,7 +32,7 @@ The model is integrated with a **Flask web application** that provides a clean, 
 
 ---
 ## 📸 Demo Preview
-![Sign Language Detection Collage](./static/images/demo.png)
+<img width="1920" height="1080" alt="demo_collage" src="https://github.com/user-attachments/assets/5af1c11e-0058-4bc2-bdef-baf3c7f99115" />
 
 
 
