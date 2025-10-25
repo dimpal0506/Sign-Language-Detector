@@ -121,7 +121,6 @@ packaging==25.0
 pandas
 passlib==1.7.4
 pillow==11.3.0
-playsound
 posthog==5.4.0
 propcache==0.3.2
 proto-plus==1.26.1
@@ -214,4 +213,5 @@ yarl==1.20.1
 zipp==3.23.0
 zope.event==5.1.1
 zope.interface==7.2
+
 
