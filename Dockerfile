@@ -1,11 +1,11 @@
-FROM python:3.11-slim
+# Use a more complete Python image to avoid apt-get issues
+FROM python:3.11-bullseye
 
 WORKDIR /app
 
-# Install system dependencies safely
+# Install system dependencies required by Mediapipe/OpenCV
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        apt-utils \
         build-essential \
         cmake \
         python3-dev \
@@ -13,7 +13,7 @@ RUN apt-get update && \
         libglib2.0-0 && \
     rm -rf /var/lib/apt/lists/*
 
-# Copy requirements from the project folder
+# Copy requirements from project folder
 COPY project/requirements.txt .
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
@@ -21,7 +21,7 @@ RUN pip install -r requirements.txt
 # Copy all project files from project folder
 COPY project/ .
 
-# Set port for Render
+# Set Render port
 ENV PORT 10000
 EXPOSE $PORT
 
