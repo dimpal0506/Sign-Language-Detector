@@ -9,4 +9,5 @@ matplotlib==3.9.2
 Flask==3.0.3
 protobuf
 Werkzeug==3.0.3
-gunicorn==23.0.0
+gunicorn
+
