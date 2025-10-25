@@ -19,7 +19,7 @@ RUN pip install --upgrade pip setuptools wheel
 
 # Copy and install Python dependencies
 COPY project/requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt gunicorn
 
 # Copy project files
 COPY project/ .
@@ -27,4 +27,5 @@ COPY project/ .
 ENV PORT 10000
 EXPOSE $PORT
 
-CMD ["gunicorn" , "app:app", "--bind", "0.0.0.0:10000"]
+# Correct CMD syntax
+CMD ["gunicorn", "app:app", "--bind", "0.0.0.0:10000"]
