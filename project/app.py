@@ -12,7 +12,7 @@ app = Flask(__name__)
 
 # ---------------- Load Model and Encoder ----------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model = tf.keras.models.load_model("dataset/sign_language_mobilenet.h5")
+model = tf.keras.models.load_model("dataset/sign_language_mobilenet.h5", compile=False)
 le = joblib.load("dataset/label_encoder_mobilenet.pkl")
 
 
