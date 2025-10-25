@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🤟 Sign Language Detection
 
 An **AI-powered application** that recognizes and interprets sign language gestures in real time using **Deep Learning** and **Computer Vision**.  
@@ -38,6 +38,4 @@ The model is integrated with a **Flask web application** that provides a clean, 
 
 
 
-=======
-# Sign-Language-Detector
->>>>>>> 5fbfa69de53f9d271f7fb04ea9f929e8ff569552
+
